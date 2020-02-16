@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
 
   def index
     @sort = params[:sort]
-    @movies = Movie.where().order(@sort)
+    @movies = Movie.order(@sort)
   end
 
   def new
